@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov  1 14:03:19 2024
+# Process ID: 28304
+# Current directory: D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_auto_pc_1_synth_1
+# Command line: vivado.exe -log design_1_auto_pc_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_pc_1.tcl
+# Log file: D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_auto_pc_1_synth_1/design_1_auto_pc_1.vds
+# Journal file: D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_auto_pc_1_synth_1\vivado.jou
+# Running On: yannos, OS: Windows, CPU Frequency: 1498 MHz, CPU Physical cores: 4, Host memory: 34115 MB
+#-----------------------------------------------------------
+source design_1_auto_pc_1.tcl -notrace

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../FFT_8bit_SoC_Behavioral.gen/sources_1/ip/mult_gen_1/sim/mult_gen_1.vhd" \
+
+nosort

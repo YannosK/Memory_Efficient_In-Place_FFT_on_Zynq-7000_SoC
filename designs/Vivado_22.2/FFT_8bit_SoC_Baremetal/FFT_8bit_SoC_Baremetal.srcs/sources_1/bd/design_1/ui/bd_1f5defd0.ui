@@ -1,0 +1,48 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.57282",
+   "Default View_TopLeft":"607,562",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1730 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1730 -y 90 -defaultsOSRD
+preplace port rgb_leds -pg 1 -lvl 6 -x 1730 -y 440 -defaultsOSRD
+preplace port btns_2bits -pg 1 -lvl 6 -x 1730 -y 470 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 800 -y 110 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 800 -y 340 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 120 -y 530 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1600 -y 460 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 2 -x 420 -y 640 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -x 800 -y 690 -defaultsOSRD
+preplace inst top_level_IP_0 -pg 1 -lvl 4 -x 1240 -y 700 -defaultsOSRD
+preplace netloc blk_mem_gen_0_doutb 1 2 2 580 830 990J
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 5 -100 370 260 520 N 520 980 480 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 -110 360 280 360 550 230 1000 460 N
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 2 590 240 980
+preplace netloc top_level_IP_0_BRAM_PORTB_0_addr 1 2 3 580 530 NJ 530 1460
+preplace netloc top_level_IP_0_BRAM_PORTB_0_clk 1 2 3 590 540 NJ 540 1450
+preplace netloc top_level_IP_0_BRAM_PORTB_0_din 1 2 3 550 850 NJ 850 1460
+preplace netloc top_level_IP_0_BRAM_PORTB_0_en 1 2 3 560 870 NJ 870 1470
+preplace netloc top_level_IP_0_BRAM_PORTB_0_rst 1 2 3 570 860 NJ 860 1480
+preplace netloc top_level_IP_0_BRAM_PORTB_0_we 1 2 3 590 840 NJ 840 1450
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 2 1 550 610n
+preplace netloc axi_gpio_0_GPIO 1 5 1 1710J 440n
+preplace netloc axi_gpio_0_GPIO2 1 5 1 NJ 470
+preplace netloc axi_interconnect_0_M00_AXI 1 1 4 270 440 NJ 440 NJ 440 N
+preplace netloc axi_interconnect_0_M01_AXI 1 1 1 270 530n
+preplace netloc axi_interconnect_0_M02_AXI 1 1 3 N 550 N 550 990
+preplace netloc processing_system7_0_DDR 1 3 3 NJ 60 N 60 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 3 3 NJ 80 1450 90 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 0 4 -120 220 NJ 220 NJ 220 990
+levelinfo -pg 1 -140 120 420 800 1240 1600 1730
+pagesize -pg 1 -db -bbox -sgen -140 0 1850 1330
+"
+}
+{
+   "da_axi4_cnt":"4",
+   "da_board_cnt":"1",
+   "da_bram_cntlr_cnt":"1",
+   "da_clkrst_cnt":"4",
+   "da_ps7_cnt":"2"
+}

@@ -1,0 +1,496 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov  1 14:06:30 2024
+# Process ID: 29656
+# Current directory: D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1
+# Command line: vivado.exe -log design_1_top_level_IP_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_top_level_IP_0_0.tcl
+# Log file: D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1/design_1_top_level_IP_0_0.vds
+# Journal file: D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1\vivado.jou
+# Running On: yannos, OS: Windows, CPU Frequency: 1498 MHz, CPU Physical cores: 4, Host memory: 34115 MB
+#-----------------------------------------------------------
+source design_1_top_level_IP_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 424.684 ; gain = 94.051
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/ip_repo/generic_AXI_slave_4regs_IP_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.cache/ip 
+Command: synth_design -top design_1_top_level_IP_0_0 -part xc7z007sclg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28984
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1243.602 ; gain = 405.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_top_level_IP_0_0' [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/bd/design_1/ip/design_1_top_level_IP_0_0/synth/design_1_top_level_IP_0_0.vhd:91]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter points bound to: 8192 - type: integer 
+	Parameter stages bound to: 13 - type: integer 
+	Parameter stagebits bound to: 4 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+	Parameter maxcount bound to: 8 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+	Parameter ROM_file bound to: d:/Yannos/FILES/PROGRAMS/DST/FFT_implementation/fft-avr3200/dataset/twiddles/twiddles_8192p.txt - type: string 
+INFO: [Synth 8-3491] module 'top_level_IP' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/top_level_IP.vhd:4' bound to instance 'U0' of component 'top_level_IP' [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/bd/design_1/ip/design_1_top_level_IP_0_0/synth/design_1_top_level_IP_0_0.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'top_level_IP' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/top_level_IP.vhd:95]
+	Parameter points bound to: 8192 - type: integer 
+	Parameter stages bound to: 13 - type: integer 
+	Parameter stagebits bound to: 4 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+	Parameter maxcount bound to: 8 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+	Parameter ROM_file bound to: d:/Yannos/FILES/PROGRAMS/DST/FFT_implementation/fft-avr3200/dataset/twiddles/twiddles_8192p.txt - type: string 
+INFO: [Synth 8-3491] module 'top_level_FFT_IP' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:4' bound to instance 'FFT_IP' of component 'top_level_FFT_IP' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/top_level_IP.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'top_level_FFT_IP' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:36]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/register_generic.vhd:4' bound to instance 'R0' of component 'reg' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:273]
+INFO: [Synth 8-638] synthesizing module '\reg ' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/register_generic.vhd:16]
+WARNING: [Synth 8-614] signal 'we' is read in the process but is not in the sensitivity list [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/register_generic.vhd:18]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/register_generic.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/register_generic.vhd:4' bound to instance 'R1' of component 'reg' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:284]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/register_generic.vhd:4' bound to instance 'shift_amount_register' of component 'reg' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'reg__parameterized2' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/register_generic.vhd:16]
+WARNING: [Synth 8-614] signal 'we' is read in the process but is not in the sensitivity list [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/register_generic.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'reg__parameterized2' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/register_generic.vhd:16]
+	Parameter shiftbits bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/reg_comp.vhd:5' bound to instance 'shamt_reg_compare' of component 'reg_comp' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:306]
+INFO: [Synth 8-638] synthesizing module 'reg_comp' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/reg_comp.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'reg_comp' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/reg_comp.vhd:19]
+	Parameter width bound to: 5 - type: integer 
+	Parameter max_count bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'shifts_count' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shifts_count.vhd:5' bound to instance 'Total_Shifts_Counter' of component 'shifts_count' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:319]
+INFO: [Synth 8-638] synthesizing module 'shifts_count' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shifts_count.vhd:22]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shifts_count.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'shifts_count' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shifts_count.vhd:22]
+	Parameter addr bound to: 12 - type: integer 
+	Parameter dat bound to: 46 - type: integer 
+	Parameter memlen bound to: 4096 - type: integer 
+	Parameter filepath bound to: d:/Yannos/FILES/PROGRAMS/DST/FFT_implementation/fft-avr3200/dataset/twiddles/twiddles_8192p.txt - type: string 
+INFO: [Synth 8-3491] module 'ROM' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/ROM.vhd:6' bound to instance 'Twiddle_ROM' of component 'ROM' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:335]
+INFO: [Synth 8-638] synthesizing module 'ROM' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/ROM.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/ROM.vhd:21]
+	Parameter width bound to: 16 - type: integer 
+	Parameter twid_width bound to: 46 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'PE' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:5' bound to instance 'Butterfly_Processing_Element' of component 'PE' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:349]
+INFO: [Synth 8-638] synthesizing module 'PE' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:28]
+	Parameter digits bound to: 10 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'shifter' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shifter.vhd:5' bound to instance 'shifter_x0_r' of component 'shifter' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'shifter' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shifter.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'shifter' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shifter.vhd:20]
+	Parameter digits bound to: 10 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'shifter' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shifter.vhd:5' bound to instance 'shifter_x0_i' of component 'shifter' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:188]
+	Parameter digits bound to: 10 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'shifter' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shifter.vhd:5' bound to instance 'shifter_x1_r' of component 'shifter' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:202]
+	Parameter digits bound to: 10 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'shifter' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shifter.vhd:5' bound to instance 'shifter_x1_i' of component 'shifter' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:217]
+	Parameter width bound to: 10 - type: integer 
+	Parameter tw_width bound to: 46 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/butterfly.vhd:5' bound to instance 'Butterfly_Processor' of component 'butterfly' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'butterfly' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/butterfly.vhd:27]
+INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1/.Xil/Vivado-29656-yannos/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'mult_A' of component 'mult_gen_0' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/butterfly.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1/.Xil/Vivado-29656-yannos/realtime/mult_gen_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1/.Xil/Vivado-29656-yannos/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'mult_B' of component 'mult_gen_0' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/butterfly.vhd:107]
+INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1/.Xil/Vivado-29656-yannos/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'mult_C' of component 'mult_gen_0' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/butterfly.vhd:116]
+INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1/.Xil/Vivado-29656-yannos/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'mult_D' of component 'mult_gen_0' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/butterfly.vhd:125]
+	Parameter width bound to: 33 - type: integer 
+	Parameter length bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'shift_reg' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shift_register.vhd:5' bound to instance 'shift_reg_x0r' of component 'shift_reg' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/butterfly.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'shift_reg' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shift_register.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'shift_reg' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shift_register.vhd:19]
+	Parameter width bound to: 33 - type: integer 
+	Parameter length bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'shift_reg' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shift_register.vhd:5' bound to instance 'shift_reg_x0i' of component 'shift_reg' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/butterfly.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'butterfly' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/butterfly.vhd:27]
+	Parameter digits bound to: 33 - type: integer 
+	Parameter fractional bound to: 23 - type: integer 
+INFO: [Synth 8-3491] module 'rounder' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/rounder.vhd:5' bound to instance 'Rounder_y0_r' of component 'rounder' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'rounder' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/rounder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'rounder' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/rounder.vhd:18]
+	Parameter digits bound to: 33 - type: integer 
+	Parameter fractional bound to: 23 - type: integer 
+INFO: [Synth 8-3491] module 'rounder' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/rounder.vhd:5' bound to instance 'Rounder_y0_i' of component 'rounder' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:264]
+	Parameter digits bound to: 33 - type: integer 
+	Parameter fractional bound to: 23 - type: integer 
+INFO: [Synth 8-3491] module 'rounder' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/rounder.vhd:5' bound to instance 'Rounder_y1_r' of component 'rounder' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:276]
+	Parameter digits bound to: 33 - type: integer 
+	Parameter fractional bound to: 23 - type: integer 
+INFO: [Synth 8-3491] module 'rounder' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/rounder.vhd:5' bound to instance 'Rounder_y1_i' of component 'rounder' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:288]
+	Parameter in_width bound to: 33 - type: integer 
+	Parameter out_width bound to: 8 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'shamt' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shamt.vhd:5' bound to instance 'Shamt_Generator_y0_r' of component 'shamt' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:300]
+INFO: [Synth 8-638] synthesizing module 'shamt' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shamt.vhd:23]
+INFO: [Synth 8-226] default block is never used [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shamt.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'shamt' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shamt.vhd:23]
+	Parameter in_width bound to: 33 - type: integer 
+	Parameter out_width bound to: 8 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'shamt' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shamt.vhd:5' bound to instance 'Shamt_Generator_y0_i' of component 'shamt' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:315]
+	Parameter in_width bound to: 33 - type: integer 
+	Parameter out_width bound to: 8 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'shamt' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shamt.vhd:5' bound to instance 'Shamt_Generator_y1_r' of component 'shamt' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:330]
+	Parameter in_width bound to: 33 - type: integer 
+	Parameter out_width bound to: 8 - type: integer 
+	Parameter shiftbits bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'shamt' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/shamt.vhd:5' bound to instance 'Shamt_Generator_y1_i' of component 'shamt' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:345]
+INFO: [Synth 8-256] done synthesizing module 'PE' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/PE.vhd:28]
+	Parameter stages bound to: 13 - type: integer 
+	Parameter stagesbits bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'address_gen' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/address_gen.vhd:5' bound to instance 'Address_Generation_Unit' of component 'address_gen' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:371]
+INFO: [Synth 8-638] synthesizing module 'address_gen' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/address_gen.vhd:25]
+	Parameter digits bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'counter_en' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/count_generic_w_enable.vhd:5' bound to instance 'cnt' of component 'counter_en' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/address_gen.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'counter_en' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/count_generic_w_enable.vhd:16]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/count_generic_w_enable.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'counter_en' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/count_generic_w_enable.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'address_gen' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/address_gen.vhd:25]
+	Parameter points bound to: 8192 - type: integer 
+	Parameter stagesbits bound to: 4 - type: integer 
+	Parameter stages bound to: 13 - type: integer 
+INFO: [Synth 8-3491] module 'FSM' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/FSM.vhd:5' bound to instance 'Control_FSM' of component 'FSM' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:390]
+INFO: [Synth 8-638] synthesizing module 'FSM' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/FSM.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/FSM.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'top_level_FFT_IP' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd:36]
+	Parameter maxcount bound to: 8 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'axi_regs' declared at 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:5' bound to instance 'AXI_Slave_4regs' of component 'axi_regs' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/top_level_IP.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'axi_regs' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:90]
+INFO: [Synth 8-226] default block is never used [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:228]
+INFO: [Synth 8-226] default block is never used [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:358]
+WARNING: [Synth 8-614] signal 'running' is read in the process but is not in the sensitivity list [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:353]
+WARNING: [Synth 8-614] signal 'ready' is read in the process but is not in the sensitivity list [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:353]
+WARNING: [Synth 8-614] signal 'total_shifts' is read in the process but is not in the sensitivity list [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:353]
+INFO: [Synth 8-256] done synthesizing module 'axi_regs' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'top_level_IP' (0#1) [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/top_level_IP.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'design_1_top_level_IP_0_0' (0#1) [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/bd/design_1/ip/design_1_top_level_IP_0_0/synth/design_1_top_level_IP_0_0.vhd:91]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:222]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:223]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:224]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module axi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module axi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module axi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module axi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module axi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module axi_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port shamtr[1] in module FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port shamtr[0] in module FSM is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1359.020 ; gain = 521.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1359.020 ; gain = 521.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1359.020 ; gain = 521.289
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1359.020 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_A'
+Finished Parsing XDC File [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_A'
+Parsing XDC File [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_B'
+Finished Parsing XDC File [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_B'
+Parsing XDC File [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_C'
+Finished Parsing XDC File [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_C'
+Parsing XDC File [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_D'
+Finished Parsing XDC File [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_D'
+Parsing XDC File [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/bd/design_1/ip/design_1_top_level_IP_0_0/design_1_top_level_IP_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/bd/design_1/ip/design_1_top_level_IP_0_0/design_1_top_level_IP_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1416.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1421.141 ; gain = 4.629
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 1421.141 ; gain = 583.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 1421.141 ; gain = 583.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1/dont_touch.xdc, line 12).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_A. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_B. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_C. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/mult_D. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 1421.141 ; gain = 583.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                            00001 |                              000
+              s_reg_load |                            00010 |                              001
+             s_butterfly |                            00100 |                              010
+           s_permutation |                            01000 |                              011
+             s_mem_write |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'reg_data_out_reg' [D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd:360]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 1421.141 ; gain = 583.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 3     
+	   2 Input   33 Bit       Adders := 3     
+	   4 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               46 Bit    Registers := 1     
+	               33 Bit    Registers := 24    
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 4     
+	   5 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 7     
+	   6 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 6     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 8     
+	   5 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 7     
+	   3 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 16    
+	   3 Input    3 Bit        Muxes := 4     
+	   8 Input    3 Bit        Muxes := 4     
+	   5 Input    3 Bit        Muxes := 6     
+	   6 Input    3 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 8     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port shamtr[1] in module FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port shamtr[0] in module FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module top_level_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module top_level_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module top_level_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module top_level_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module top_level_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module top_level_IP is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:59 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-------------------+---------------+----------------+
+|Module Name | RTL Object        | Depth x Width | Implemented As | 
++------------+-------------------+---------------+----------------+
+|ROM         | ROM_content[4095] | 4096x46       | LUT            | 
++------------+-------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:44 ; elapsed = 00:02:08 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:44 ; elapsed = 00:02:08 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:47 ; elapsed = 00:02:12 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:02:20 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:02:20 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:02:20 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:54 ; elapsed = 00:02:20 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:54 ; elapsed = 00:02:21 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:54 ; elapsed = 00:02:21 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+-------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                                                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+-------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_level_IP | FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/shift_reg_x0r/d_out_reg[31] | 5      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|top_level_IP | FFT_IP/Butterfly_Processing_Element/Butterfly_Processor/shift_reg_x0i/d_out_reg[31] | 5      | 10    | NO           | NO                 | YES               | 10     | 0       | 
++-------------+-------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |mult_gen_0    |         4|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |mult_gen_0_bbox |     4|
+|5     |CARRY4          |    86|
+|6     |LUT1            |   141|
+|7     |LUT2            |   189|
+|8     |LUT3            |   173|
+|9     |LUT4            |   201|
+|10    |LUT5            |  2673|
+|11    |LUT6            |  1434|
+|12    |MUXF7           |   392|
+|13    |SRL16E          |    20|
+|14    |FDCE            |   780|
+|15    |FDPE            |     3|
+|16    |FDRE            |    96|
+|17    |FDSE            |     3|
+|18    |LD              |    31|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:54 ; elapsed = 00:02:21 . Memory (MB): peak = 1621.156 ; gain = 783.426
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:28 ; elapsed = 00:02:15 . Memory (MB): peak = 1621.156 ; gain = 721.305
+Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:02:21 . Memory (MB): peak = 1621.156 ; gain = 783.426
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1621.156 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 509 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1621.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 31 instances were transformed.
+  LD => LDCE: 31 instances
+
+Synth Design complete, checksum: 97bd2115
+INFO: [Common 17-83] Releasing license: Synthesis
+94 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:05 ; elapsed = 00:02:37 . Memory (MB): peak = 1621.156 ; gain = 1157.520
+INFO: [Coretcl 2-1174] Renamed 22 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/Yannos/FILES/PROGRAMS/FPGA/VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.runs/design_1_top_level_IP_0_0_synth_1/design_1_top_level_IP_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_top_level_IP_0_0_utilization_synth.rpt -pb design_1_top_level_IP_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  1 14:09:41 2024...

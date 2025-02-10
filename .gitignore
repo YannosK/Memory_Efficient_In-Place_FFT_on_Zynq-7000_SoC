@@ -1,0 +1,60 @@
+###########################
+# hdl
+###########################
+
+designs/old_code
+
+designs/sv_code/fft_8bit/unused
+
+designs/Vivado_22.2/FFT_8bit_SoC_Baremetal/FFT_8bit_SoC_Baremetal.cache
+designs/Vivado_23.2/FFT_8bit_SoC_Baremetal/FFT_8bit_SoC_Baremetal.sim
+designs/Vivado_22.2/FFT_8bit_SoC_Baremetal/FFT_8bit_SoC_Baremetal.hw
+designs/Vivado_22.2/FFT_8bit_SoC_Baremetal/.Xil
+designs/Vivado_22.2/FFT_8bit_SoC_Baremetal/*.jou
+designs/Vivado_22.2/FFT_8bit_SoC_Baremetal/*.log
+designs/Vivado_22.2/FFT_8bit_SoC_Baremetal/*.zip
+
+designs/Vivado_22.2/FFT_8bit_SoC_Behavioral/FFT_8bit_SoC_Behavioral.cache
+designs/Vivado_22.2/FFT_8bit_SoC_Behavioral/FFT_8bit_SoC_Behavioral.sim
+designs/Vivado_22.2/FFT_8bit_SoC_Behavioral/FFT_8bit_SoC_Behavioral.hw
+designs/Vivado_22.2/FFT_8bit_SoC_Behavioral/.Xil
+designs/Vivado_22.2/FFT_8bit_SoC_Behavioral/*.jou
+designs/Vivado_22.2/FFT_8bit_SoC_Behavioral/*.log
+designs/Vivado_22.2/FFT_8bit_SoC_Behavioral/*.zip
+
+###########################
+# python
+###########################
+scripts/.venv
+
+scripts/dataset_gen/__pycache__
+
+scripts/golden_code/__pycache__
+
+scripts/machine/__pycache__
+
+scripts/vivado_batch/8bit/all_samples/__pycache__
+scripts/vivado_batch/8bit/all_samples/vivado_logs
+scripts/vivado_batch/8bit/one_dataset_fixed_points/__pycache__
+scripts/vivado_batch/8bit/one_dataset_fixed_points/vivado_logs
+scripts/vivado_batch/8bit/selective_samples/__pycache__
+scripts/vivado_batch/8bit/selective_samples/vivado_logs
+
+scripts/vivado_batch/16bit/all_samples/__pycache__
+scripts/vivado_batch/16bit/all_samples/vivado_logs
+scripts/vivado_batch/16bit/one_dataset_fixed_points/__pycache__
+scripts/vivado_batch/16bit/one_dataset_fixed_points/vivado_logs
+scripts/vivado_batch/16bit/selective_samples/__pycache__
+scripts/vivado_batch/16bit/selective_samples/vivado_logs
+
+###########################
+# datasets
+###########################
+dataset
+
+###########################
+# tests & temporary
+###########################
+temp
+docs/Butterfly Operations.jpg
+docs/Butterfly Processor.jpg
