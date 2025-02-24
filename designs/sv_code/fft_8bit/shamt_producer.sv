@@ -17,7 +17,7 @@ module shamt_producer #(
     generate
         if (!((width == 8 && shamtbits == 4) || (width == 16 && shamtbits == 5))) begin
             initial begin
-                $error ("[shamt_decider_unit]: wrong parameter values");
+                $error ("[shamt_producer]: wrong parameter values");
                 $finish;
             end
         end

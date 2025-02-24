@@ -18,10 +18,10 @@ module processing_element #(
         input logic[twidwidth-1:0]  tw_i_i,
         input logic[shamtbits-1:0]  shamt_i,
 
-        output logic[width-1:0]     y0r_i,
-        output logic[width-1:0]     y0i_i,
-        output logic[width-1:0]     y1r_i,
-        output logic[width-1:0]     y1i_i,
+        output logic[width-1:0]     y0r_o,
+        output logic[width-1:0]     y0i_o,
+        output logic[width-1:0]     y1r_o,
+        output logic[width-1:0]     y1i_o,
         output logic[shamtbits-1:0] shamt_o
     );
     
@@ -63,6 +63,7 @@ module processing_element #(
     logic [0:ports-1][width-1:0]                limiter_to_shamt_producer;
     logic [0:ports-1][width-1:0]                shamt_producer_to_decider;
     logic [0:ports-1][shamtbits-1:0]            shamt_outputs;
+    logic [0:ports-1][width-1:0]                shamt_decider_to_output;
 
     axi_ctr_intrf axi_shifter_to_butterfly();
     axi_ctr_intrf axi_butterfly_to_rounder();
@@ -81,6 +82,11 @@ module processing_element #(
     assign input_to_shifter[1] = x0i_i;
     assign input_to_shifter[2] = x1r_i;
     assign input_to_shifter[3] = x1i_i;
+
+    assign y0r_o = shamt_decider_to_output[0];
+    assign y0i_o = shamt_decider_to_output[1];
+    assign y1r_o = shamt_decider_to_output[2];
+    assign y1i_o = shamt_decider_to_output[3];
 
     /***********************************************
     *   Module instantiations
@@ -146,6 +152,19 @@ module processing_element #(
         .data_i(limiter_to_shamt_producer),
         .data_o(shamt_producer_to_decider),
         .shamt_o(shamt_outputs)
+    );
+
+    shamt_decider #(
+        .width(width),
+        .shamtbits(shamtbits)
+    ) shamt_decider_inst (
+        .clk_rstn_i(clk_rstn_i),
+        .s_axis(axi_shamt_producer_to_decider.s_axis),
+        .m_axis(m_axis),
+        .data_i(shamt_producer_to_decider),
+        .data_o(shamt_decider_to_output),
+        .shamt_i(shamt_outputs),
+        .shamt_o(shamt_o)
     );
 
 

@@ -1,34 +1,13 @@
-# old design
+# System Verilog HDL rewrite
 
-- [x] top level module
-    - [ ] r0 & r1 regs
-    - [ ] shamt reg
-    - [ ] shamt reg-compare
-    - [ ] shift counter
-    - [x] system memory
-    - [x] twiddle rom
-    - [ ] processing element
-      - [ ] shift unit
-      - [ ] butterfly processor
-        - [ ] multiplier
-        - [ ] shift-reg
-      - [x] rounding unit
-      - [ ] shamt generate unit
-      - [ ] shamt decide unit _maybe same with reg compare_
-    - [ ] address generation unit
-      - [ ] pair - stage counter
-    - [ ] control unit
-      - [ ] sync stage
+Here I keep track of the progress of rewriting the FFT IP core.
 
-# new design
+***Newly written hdl SystemVerilog modules***
 
-**Active low reset, even if BRAM has active high reset!!!**
-
-- [ ] interfaces
 - [ ] top level ip
   - [x] system memory (**must be active high reset**)
   - [x] twiddle rom
-  - [ ] processing element (_the following need the order shown_)
+  - [x] processing element (_the following need the order shown_)
     - [x] shifter
       - [x] shift_unit 
     - [x] butterfly processor
@@ -43,13 +22,47 @@
         - [x] shamt_unit
           - [x] 8 bit section
           - [x] 16 bit section
-    - [ ] shamt decider
+    - [x] shamt decider
+  - [ ] address generation unit (AGU)
+  - [ ] control unit
+  - [ ] register file
+    - [ ] data input dual registers
+    - [ ] shift amount register with compare
+    - [ ] shifts count register
+- [ ] interfaces of top level module
+  - [ ] BRAM ports
+  - [ ] AXI4-Lite Memory mapped interfaces
+
+
+***Newly written hdl correspondance with old vhdl design***
+
+- [x] top level module
+    - [ ] r0 & r1 regs
+    - [ ] shamt reg
+    - [ ] shamt reg-compare
+    - [ ] shift counter
+    - [x] system memory
+    - [x] twiddle rom
+    - [x] processing element
+      - [x] shift unit
+      - [x] butterfly processor
+        - [x] multiplier
+        - [x] shift-reg
+      - [x] rounding unit
+      - [x] shamt generate unit
+      - [x] shamt decide unit _maybe same with reg compare_
+    - [ ] address generation unit
+      - [ ] pair - stage counter
+    - [ ] control unit
+      - [ ] sync stage
+
 
 ## Things that might be wrong
 - This multiplier instantiation
 
+## Internal widths
 
-# Internal widths
+Here is a small list of the bits needed for data representation
 
 - start with 8bit
 - extend to 9bit for 1-shift
@@ -59,7 +72,7 @@
 - rounding at the 24-3-6 = 15: we keep 15 and from 14 downto 0 we cut. End up with a 9bit in 3-6
 - after the limits unit we trunc the one extra bit and end up with a 8bit in 2-6 (initial memory conf)
 
-So the relations are
+So the relations are:
 
 ```SystemVerilog
 

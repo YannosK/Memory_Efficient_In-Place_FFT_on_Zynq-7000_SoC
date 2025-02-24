@@ -12,9 +12,19 @@ module fft_ip_top_level #(
         input logic     clk_i,
         input logic     rstn_i,
 
+        /*-------------------------------------
+         Interfaces where the PS
+         can write to the local BRAM
+         of the FFT IP core.
+        -------------------------------------*/
+
         bram_intrf.slave bram_porta,
 
-        axi_ctr_intrf.s_axis s_axis,
+        /*-------------------------------------
+         Control interfaces
+         that must become AXI4-Lite
+         registers in the future work.
+        -------------------------------------*/
 
         input logic run,
         output logic [maxshifts-1:0] total_shifts
@@ -73,6 +83,5 @@ module fft_ip_top_level #(
         .shamtbits  (shamtbits)
     ) processing_element_inst (
     );
-
 
 endmodule : fft_ip_top_level
