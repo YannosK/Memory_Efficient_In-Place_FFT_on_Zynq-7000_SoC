@@ -59,6 +59,7 @@ Here I keep track of the progress of rewriting the FFT IP core.
 
 ## Things that might be wrong
 - This multiplier instantiation
+- the pairbits in AGU
 
 ## Internal widths
 

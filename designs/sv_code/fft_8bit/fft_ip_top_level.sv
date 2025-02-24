@@ -39,12 +39,15 @@ module fft_ip_top_level #(
     localparam romlen = points / 2;
     localparam ramaddr = stages - 1;
     localparam romaddr = stages - 1;
-    localparam width = wordlen / 4;                      // number width
-    localparam twidwidth = romwordlen / 2;               //  twiddle number width  
+    localparam width = wordlen / 4;         // number width
+    localparam twidwidth = romwordlen / 2;  //  twiddle number width  
+    localparam pairbits = stages - 2;       // number of bits to count the FFT pairs on each stage
 
     /***********************************************
     *   Internal Signals
     ***********************************************/
+
+    clk_rstn_intrf clk_rstn();
 
     bram_intrf bram_portb();
 
@@ -55,7 +58,9 @@ module fft_ip_top_level #(
     *   Direct assignments
     ***********************************************/
 
-    // need to pass clocks and resets in the interface
+    // packing clock and reset into an interface
+    assign clk_rstn.clk = clk_i;
+    assign clk_rstn.rstn = rstn_i;
 
     /***********************************************
     *   Module instantiations
@@ -82,6 +87,25 @@ module fft_ip_top_level #(
         .twidwidth  (twidwidth),
         .shamtbits  (shamtbits)
     ) processing_element_inst (
+        .clk_rstn_i     (clk_rstn.slave),
+        .s_axis         (),
+        .m_axis         (),
+        .x0r_i          (),
+        .x0i_i          (),
+        .x1r_i          (),
+        .x1i_i          (),
+        .tw_r_i         (),
+        .tw_i_i         (),
+        .shamt_i        (),
+        .y0r_o          (),
+        .y0i_o          (),
+        .y1r_o          (),
+        .y1i_o          (),
+        .shamt_o        ()
+    );
+
+    address_generation_unit #(
+    ) address_generation_unit_inst (
     );
 
 endmodule : fft_ip_top_level
