@@ -200,12 +200,12 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_proc_sys_reset_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_top_level_IP_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_top_level_IP_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_2"/>

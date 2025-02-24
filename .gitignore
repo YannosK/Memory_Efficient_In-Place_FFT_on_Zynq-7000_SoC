@@ -33,6 +33,8 @@ scripts/golden_code/__pycache__
 
 scripts/machine/__pycache__
 
+scripts/vivado_batch/templates
+
 scripts/vivado_batch/8bit/all_samples/__pycache__
 scripts/vivado_batch/8bit/all_samples/vivado_logs
 scripts/vivado_batch/8bit/one_dataset_fixed_points/__pycache__

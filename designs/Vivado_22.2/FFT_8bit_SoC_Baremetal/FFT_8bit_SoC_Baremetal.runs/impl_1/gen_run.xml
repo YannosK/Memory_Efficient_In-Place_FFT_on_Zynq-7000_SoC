@@ -17,6 +17,7 @@
   <File Type="BITSTR-MMI" Name="design_1_wrapper.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="design_1_wrapper_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="design_1_wrapper.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="design_1_wrapper_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="design_1_wrapper.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -25,8 +26,11 @@
   <File Type="PLACE-IO" Name="design_1_wrapper_io_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="design_1_wrapper_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="design_1_wrapper_utilization_placed.pb"/>
+  <File Type="ROUTE-RQS" Name="design_1_wrapper_routed.rqs"/>
   <File Type="PLACE-CTRL" Name="design_1_wrapper_control_sets_placed.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="design_1_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="ROUTE-DRC" Name="design_1_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="design_1_wrapper_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="design_1_wrapper_power_routed.rpx"/>
@@ -48,7 +52,6 @@
   <File Type="PHYSOPT-DCP" Name="design_1_wrapper_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="design_1_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="design_1_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="design_1_wrapper_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="design_1_wrapper_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="design_1_wrapper_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="design_1_wrapper.pdi"/>
@@ -57,10 +60,7 @@
   <File Type="RNPI_FILE" Name="design_1_wrapper.rnpi"/>
   <File Type="NPI_FILE" Name="design_1_wrapper.npi"/>
   <File Type="RBD_FILE" Name="design_1_wrapper.rbd"/>
-  <File Type="ROUTE-RQS" Name="design_1_wrapper_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="design_1_wrapper_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/mult_gen_0/mult_gen_0.xci">
@@ -264,12 +264,12 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_proc_sys_reset_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_top_level_IP_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_top_level_IP_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_2"/>

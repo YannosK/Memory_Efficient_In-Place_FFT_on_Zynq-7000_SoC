@@ -101,129 +101,129 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/FSM.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/FSM.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/FSM.vhd"/>
-          <Attr Name="ImportTime" Val="1728060245"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/FSM.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/PE.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/PE.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/PE.vhd"/>
-          <Attr Name="ImportTime" Val="1727960372"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/PE.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/ROM.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/ROM.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/ROM.vhd"/>
-          <Attr Name="ImportTime" Val="1727814163"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/ROM.vhd"/>
+          <Attr Name="ImportTime" Val="1734701951"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/address_gen.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/address_gen.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/address_gen.vhd"/>
-          <Attr Name="ImportTime" Val="1727807968"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/address_gen.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/axi_regs.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/axi_regs.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/axi_regs.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/axi_regs.vhd"/>
           <Attr Name="ImportTime" Val="1729503073"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/butterfly.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/butterfly.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/butterfly.vhd"/>
-          <Attr Name="ImportTime" Val="1727959983"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/butterfly.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/count_generic_w_enable.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/count_generic_w_enable.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/count_generic_w_enable.vhd"/>
-          <Attr Name="ImportTime" Val="1727807968"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/count_generic_w_enable.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/reg_comp.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/reg_comp.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/reg_comp.vhd"/>
-          <Attr Name="ImportTime" Val="1727807968"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/reg_comp.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/register_generic.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/register_generic.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/register_generic.vhd"/>
-          <Attr Name="ImportTime" Val="1727807968"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/register_generic.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/rounder.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/rounder.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/rounder.vhd"/>
-          <Attr Name="ImportTime" Val="1727881648"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/rounder.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/shamt.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/shamt.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/shamt.vhd"/>
-          <Attr Name="ImportTime" Val="1727887008"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/shamt.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/shift_register.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/shift_register.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/shift_register.vhd"/>
-          <Attr Name="ImportTime" Val="1727807968"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/shift_register.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/shifter.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/shifter.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/shifter.vhd"/>
-          <Attr Name="ImportTime" Val="1727881648"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/shifter.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/shifts_count.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/shifts_count.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/shifts_count.vhd"/>
-          <Attr Name="ImportTime" Val="1727807968"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/shifts_count.vhd"/>
+          <Attr Name="ImportTime" Val="1728838438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/top_level_FFT_IP.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/imports/FFT_x32_vhdl_code/top_level_FFT_IP.vhd"/>
-          <Attr Name="ImportTime" Val="1728503275"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/top_level_FFT_IP.vhd"/>
+          <Attr Name="ImportTime" Val="1729608774"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/top_level_IP.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/fft_8bit/top_level_IP.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/sources_1/new/top_level_IP.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl_code/fft_8bit/top_level_IP.vhd"/>
           <Attr Name="ImportTime" Val="1730452428"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -237,9 +237,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_top_level_IP_0_0/design_1_top_level_IP_0_0.xci">
-          <Proxy FileSetName="design_1_top_level_IP_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xci">
           <Proxy FileSetName="design_1_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
@@ -249,35 +246,15 @@
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xci">
           <Proxy FileSetName="design_1_processing_system7_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_auto_pc_0/design_1_auto_pc_0.xci">
-          <Proxy FileSetName="design_1_auto_pc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_auto_pc_2/design_1_auto_pc_2.xci">
-          <Proxy FileSetName="design_1_auto_pc_2"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xci">
           <Proxy FileSetName="design_1_proc_sys_reset_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_xbar_0/design_1_xbar_0.xci">
           <Proxy FileSetName="design_1_xbar_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_auto_pc_1/design_1_auto_pc_1.xci">
-          <Proxy FileSetName="design_1_auto_pc_1"/>
-        </CompFileExtendedInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/design_1_wrapper.vhd">
+      <File Path="$PGENDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd"/>
-          <Attr Name="ImportTime" Val="1730462489"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/FFT_x32_vhdl_code/string_pkg.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../DST/FFT_implementation/fft-avr3200/designs/FFT_x32_vhdl_code/string_pkg.vhd"/>
-          <Attr Name="ImportTime" Val="1727824631"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -298,8 +275,11 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="design_1_wrapper"/>
+        <Option Name="TopModule" Val="top_level_IP"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopArchitecture" Val="My_FFT_IP"/>
+        <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/fft_8bit/top_level_IP.vhd"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SelectedSimModel" Val="rtl"/>
@@ -357,34 +337,6 @@
     <FileSet Name="design_1_axi_bram_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_axi_bram_ctrl_0_0" RelGenDir="$PGENDIR/design_1_axi_bram_ctrl_0_0">
       <Config>
         <Option Name="TopModule" Val="design_1_axi_bram_ctrl_0_0"/>
-        <Option Name="dataflowViewerSettings" Val="min_width=16"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="design_1_top_level_IP_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_top_level_IP_0_0" RelGenDir="$PGENDIR/design_1_top_level_IP_0_0">
-      <Config>
-        <Option Name="TopModule" Val="design_1_top_level_IP_0_0"/>
-        <Option Name="dataflowViewerSettings" Val="min_width=16"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="design_1_auto_pc_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_auto_pc_2" RelGenDir="$PGENDIR/design_1_auto_pc_2">
-      <Config>
-        <Option Name="TopModule" Val="design_1_auto_pc_2"/>
-        <Option Name="dataflowViewerSettings" Val="min_width=16"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="design_1_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_auto_pc_0" RelGenDir="$PGENDIR/design_1_auto_pc_0">
-      <Config>
-        <Option Name="TopModule" Val="design_1_auto_pc_0"/>
-        <Option Name="dataflowViewerSettings" Val="min_width=16"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="design_1_auto_pc_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_auto_pc_1" RelGenDir="$PGENDIR/design_1_auto_pc_1">
-      <Config>
-        <Option Name="TopModule" Val="design_1_auto_pc_1"/>
         <Option Name="dataflowViewerSettings" Val="min_width=16"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
@@ -460,46 +412,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="design_1_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_axi_bram_ctrl_0_0" Part="xc7z007sclg400-1" ConstrsSet="design_1_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_axi_bram_ctrl_0_0_synth_1" AutoRQSDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_axi_bram_ctrl_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="design_1_top_level_IP_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_top_level_IP_0_0" Part="xc7z007sclg400-1" ConstrsSet="design_1_top_level_IP_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_top_level_IP_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_top_level_IP_0_0_synth_1" AutoRQSDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_top_level_IP_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="design_1_auto_pc_2_synth_1" Type="Ft3:Synth" SrcSet="design_1_auto_pc_2" Part="xc7z007sclg400-1" ConstrsSet="design_1_auto_pc_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_auto_pc_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_2_synth_1" AutoRQSDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_2_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="design_1_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_auto_pc_0" Part="xc7z007sclg400-1" ConstrsSet="design_1_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_auto_pc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_0_synth_1" AutoRQSDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="design_1_auto_pc_1_synth_1" Type="Ft3:Synth" SrcSet="design_1_auto_pc_1" Part="xc7z007sclg400-1" ConstrsSet="design_1_auto_pc_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_auto_pc_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_1_synth_1" AutoRQSDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_1_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
@@ -612,75 +524,157 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="design_1_top_level_IP_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg400-1" ConstrsSet="design_1_top_level_IP_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_1_top_level_IP_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_top_level_IP_0_0_impl_1" AutoRQSDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_top_level_IP_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="design_1_auto_pc_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg400-1" ConstrsSet="design_1_auto_pc_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_1_auto_pc_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_2_impl_1" AutoRQSDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_2_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="design_1_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg400-1" ConstrsSet="design_1_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_1_auto_pc_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_0_impl_1" AutoRQSDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="design_1_auto_pc_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg400-1" ConstrsSet="design_1_auto_pc_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_1_auto_pc_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_1_impl_1" AutoRQSDir="$PPRDIR/../../../../../VIVADO/Cora_Z7/Projects/Full_FFT_System_Baremetal/Full_FFT_System_Baremetal.srcs/utils_1/imports/design_1_auto_pc_1_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
   </Runs>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Board 49-151"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="1"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Board 49-151] The current board &apos;digilentinc.com::cora-z7-07s:1.1&apos; is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Synth 8-7129"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="10"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Synth 8-7129] Port CLK in module delay_line is either unconnected or has no load"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Vivado 12-13340"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="2"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Vivado 12-13277"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="3"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Vivado 12-13277] Compiled library path does not exist: &apos;&apos;"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Synth 8-614"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="4"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Synth 8-614] signal &apos;we&apos; is read in the process but is not in the sensitivity list [D:/Yannos/FILES/PROGRAMS/DST/FFT_implementation/FPGA/Designs/FFT_arch_v1/FFT_arch_v1.srcs/src/register_generic.vhd:18]"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Synth 8-614"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="5"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Synth 8-614] signal &apos;en&apos; is read in the process but is not in the sensitivity list [D:/Yannos/FILES/PROGRAMS/DST/FFT_implementation/FPGA/Designs/FFT_arch_v1/FFT_arch_v1.srcs/src/shifts_count.vhd:24]"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Synth 8-614"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="6"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Synth 8-614] signal &apos;en&apos; is read in the process but is not in the sensitivity list [D:/Yannos/FILES/PROGRAMS/DST/FFT_implementation/FPGA/Designs/FFT_arch_v1/FFT_arch_v1.srcs/src/count_generic_w_enable.vhd:18]"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Synth 8-5640"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="7"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Synth 8-5640] Port &apos;zero_detect&apos; is missing in component declaration [d:/Yannos/FILES/PROGRAMS/DST/FFT_implementation/FPGA/Designs/FFT_arch_v1/FFT_arch_v1.gen/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:71]"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Synth 8-5640"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="8"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Synth 8-5640] Port &apos;pcasc&apos; is missing in component declaration [d:/Yannos/FILES/PROGRAMS/DST/FFT_implementation/FPGA/Designs/FFT_arch_v1/FFT_arch_v1.gen/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:71]"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Synth 8-5974"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="9"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Synth 8-5974] attribute &quot;use_dsp48&quot; has been deprecated, please use &quot;use_dsp&quot; instead"/>
+  </MsgRule>
   <Board>
     <Jumpers/>
   </Board>
