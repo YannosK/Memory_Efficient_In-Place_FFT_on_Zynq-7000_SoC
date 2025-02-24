@@ -24,14 +24,33 @@ module butterfly #(
     );
     
     /***********************************************
+    *   Generate Block / Pre-Synthesis Check
+    ***********************************************/
+
+    generate
+        if (!((width == 9) || (width == 17))) begin
+            initial begin
+                $error ("[butterfly]: wrong width value");
+                $finish;
+            end
+        end
+        else if (!((multwidth == width + twidwidth) || (intrwidth == multwidth - 1))) begin
+            initial begin
+                $error ("[butterfly]: wrong multplication and internal width values");
+                $finish;
+            end
+        end
+    endgenerate
+
+    /***********************************************
     *   Internal Signals
     ***********************************************/
 
     logic [0:5][intrwidth-1:0] data_s0; // data output of stage 0
     logic [0:3][intrwidth-1:0] data_s1; // data output of stage 1
 
-    axi_ctr_intrf axi_s01(); // axi interface between stage 0 and stage 1
-    axi_ctr_intrf axi_s12(); // axi interface between stage 1 and stage 2
+    axi_ctr_intrf axis_s01(); // axi interface between stage 0 and stage 1
+    axi_ctr_intrf axis_s12(); // axi interface between stage 1 and stage 2
 
     /***********************************************
     *   Module instantiations

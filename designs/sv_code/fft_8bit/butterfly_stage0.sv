@@ -1,8 +1,5 @@
 /*
-    This needs
-    - Some kind of AXI synchronization for the three stage multiplier
-    - One solution is to use a non-pipelined multiplier
-    - Else you can use some FSM logic
+    This uses a sequential asynchronous multiplier
 */
 
 module butterfly_stage0 #(
@@ -25,17 +22,17 @@ module butterfly_stage0 #(
     *   Internal Signals
     ***********************************************/
 
-    logic [width-1:0]       x0r;
-    logic [width-1:0]       x0i;
-    logic [width-1:0]       x1r;
-    logic [width-1:0]       x1i;
-    logic [twidwidth-1:0]   wr;
-    logic [twidwidth-1:0]   wi;
+    logic [width-1:0]       x0r_i;
+    logic [width-1:0]       x0i_i;
+    logic [width-1:0]       x1r_i;
+    logic [width-1:0]       x1i_i;
+    logic [twidwidth-1:0]   wr_i;
+    logic [twidwidth-1:0]   wi_i;
 
-    logic [multwidth-1:0] A;
-    logic [multwidth-1:0] B;
-    logic [multwidth-1:0] C;
-    logic [multwidth-1:0] D;
+    logic [multwidth-1:0] A_o;
+    logic [multwidth-1:0] B_o;
+    logic [multwidth-1:0] C_o;
+    logic [multwidth-1:0] D_o;
 
     /***********************************************
     *   Immediate assign
@@ -46,13 +43,8 @@ module butterfly_stage0 #(
     assign x1r_i = data_i[2];    
     assign x1i_i = data_i[3];
 
-    assign tw_r_i = twiddle_i[0];
-    assign tw_i_i = twiddle_i[1];
-
-    // assign data_o[0] = y0r_i;
-    // assign data_o[1] = y0i_i;
-    // assign data_o[2] = y1r_i;
-    // assign data_o[3] = y1i_i;
+    assign wr_i = twiddle_i[0];
+    assign wi_i = twiddle_i[1];
 
     /***********************************************
     *   Module instantiation
@@ -60,43 +52,31 @@ module butterfly_stage0 #(
 
     /* 
         The multiplier is generated with Vivado IP generator.
-        It has three pipeline stages and it uses the DSP48 slices.
+        It uses the DSP48 slices.
     */
-
+    
     mult_gen_1 mult_A (
-        .CLK(clk_rstn_i.clk),    // input wire CLK
-        .A(A),        // input wire [8 : 0] A
-        .B(B),        // input wire [15 : 0] B
-        .CE(m_axis.tready),      // input wire CE
-        .SCLR(~clk_rstn_i.rstn),  // input wire SCLR
-        .P(P)        // output wire [24 : 0] P
+        .A(x1r_i),
+        .B(wr_i),
+        .P(A_o)
     );
 
     mult_gen_1 mult_B (
-        .CLK(clk_rstn_i.clk),    // input wire CLK
-        .A(A),        // input wire [8 : 0] A
-        .B(B),        // input wire [15 : 0] B
-        .CE(m_axis.tready),      // input wire CE
-        .SCLR(~clk_rstn_i.rstn),  // input wire SCLR
-        .P(P)        // output wire [24 : 0] P
+        .A(x1i_i),
+        .B(wi_i),
+        .P(B_o)
     );
 
     mult_gen_1 mult_C (
-        .CLK(clk_rstn_i.clk),    // input wire CLK
-        .A(A),        // input wire [8 : 0] A
-        .B(B),        // input wire [15 : 0] B
-        .CE(m_axis.tready),      // input wire CE
-        .SCLR(~clk_rstn_i.rstn),  // input wire SCLR
-        .P(P)        // output wire [24 : 0] P
+        .A(x1i_i),
+        .B(wr_i),
+        .P(D_o)
     );
 
     mult_gen_1 mult_D (
-        .CLK(clk_rstn_i.clk),    // input wire CLK
-        .A(A),        // input wire [8 : 0] A
-        .B(B),        // input wire [15 : 0] B
-        .CE(m_axis.tready),      // input wire CE
-        .SCLR(~clk_rstn_i.rstn),  // input wire SCLR
-        .P(P)        // output wire [24 : 0] P
+        .A(x1r_i),
+        .B(wi_i),
+        .P(C_o)
     );
 
     /***********************************************
@@ -105,11 +85,21 @@ module butterfly_stage0 #(
 
     always_ff @(posedge clk_rstn_i.clk or negedge clk_rstn_i.rstn) begin
 
+        /*
+            The assertions test that we do not need the MSB of the results
+            since it always has the same bit value with the next to the MSB
+        */
+
+        MULT_A: assert (A_o[multwidth-1] == A_o[multwidth-2]);
+        MULT_B: assert (B_o[multwidth-1] == B_o[multwidth-2]);
+        MULT_D: assert (D_o[multwidth-1] == D_o[multwidth-2]);
+        MULT_C: assert (C_o[multwidth-1] == C_o[multwidth-2]);
+
         if (~clk_rstn_i.rstn) begin
             s_axis.tready <= 1'b0;
             m_axis.tvalid <= 1'b0;
             m_axis.tlast <= 1'b0;
-            zeroed <= '0;
+            data_o <= '0;
         end
         else begin
             s_axis.tready <= m_axis.tready;
@@ -117,14 +107,12 @@ module butterfly_stage0 #(
             m_axis.tlast <= s_axis.tlast;
 
             if (m_axis.tready) begin
-                if (data_i[roundbit-1:0] > threshold) begin
-                    // blocking assignments purposefully
-                    rounded = data_i + added;
-                    zeroed = rounded & mask_lsb;
-                end
-                else begin
-                    zeroed <= rounded & mask_lsb;
-                end
+                data_o[0] <= x0r_i;
+                data_o[1] <= x0i_i;
+                data_o[2] <= A_o[multwidth-2:0];
+                data_o[3] <= B_o[multwidth-2:0];
+                data_o[4] <= D_o[multwidth-2:0];
+                data_o[5] <= C_o[multwidth-2:0];
             end
         end
 

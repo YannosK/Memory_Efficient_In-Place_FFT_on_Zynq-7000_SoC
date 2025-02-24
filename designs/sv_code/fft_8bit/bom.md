@@ -32,9 +32,9 @@
     - [x] shifter
       - [x] shift_unit 
     - [x] butterfly processor
-      - [ ] stage 0
-      - [ ] stage 1
-      - [ ] stage 2
+      - [x] stage 0
+      - [x] stage 1
+      - [x] stage 2
     - [x] rounder
       - [x] rounding unit
     - [x] limiter
