@@ -50,3 +50,12 @@ To navigate this repository each folder contains its own `readme` documentation.
 - [ ] interfaces of top level module
   - [ ] BRAM ports
   - [ ] AXI4-Lite Memory mapped interfaces
+
+***Refactored scripts***
+
+The [python scripts](./scripts/) will undergo changes so that they become more efficient. You can see them in their [readme](./scripts/readme.md).
+
+- dataset_gen
+  - [x] twiddle_creator
+  - [ ] dataset_creator
+  - [ ] cleanup

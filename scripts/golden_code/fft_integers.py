@@ -3,6 +3,7 @@
 #############################################################################################
 
 import csv
+import os
 import numpy as np
 
 def bin_converter(
@@ -285,7 +286,7 @@ def twiddlefile(
         w_s = w_s*w0
 
     if create_complex_file == True:
-        complex_file = file_path + complex_file_name
+        complex_file = os.path.join(file_path, complex_file_name)
         with open(complex_file, 'w') as file:
             for twid in w:
                 file.write(str(twid) + '\n')
@@ -298,7 +299,9 @@ def twiddlefile(
         bit = bit_real + bit_imag
         bitstr.append(bit)
 
-    twiddle_file = file_path + file_name
+    twiddle_file = os.path.join(file_path, file_name)
+
+    print(twiddle_file)
 
     with open(twiddle_file, 'w') as file:
         for string in bitstr:

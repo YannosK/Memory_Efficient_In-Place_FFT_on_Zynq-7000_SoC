@@ -1,60 +1,76 @@
+import argparse
+import configparser
 import os
-import sys
-sys.path.insert(0, '../machine/')
-sys.path.insert(0, '../golden_code/')
-import global_constants as my
-import fft_integers as FFTint
+from scripts.golden_code.fft_integers import twiddlefile
+from scripts.machine.machine_config import load_config
 
-def get_datasets(directory, start=0):
-    file_numbers = []
-    
-    for filename in os.listdir(directory):
-        if filename.endswith('.txt'):
-            number = filename.split('.')[0]
-            if number.isdigit():
-                file_numbers.append(int(number))
+################################################
+# Parser
+################################################
 
-    file_numbers.sort()
+parser = argparse.ArgumentParser(description='This script creates binaries of the FFT twiddles. For an N-point FFT it generates half the twiddle values. The egenerated file will be used in the Vivado project')
 
-    filtered_numbers = [num for num in file_numbers if num >= start]
-    
-    return filtered_numbers
+parser.add_argument('machinefile',
+                    help='A .ini file that has important system information')
+parser.add_argument('points',
+                    help='Number of FFT points')
+parser.add_argument('twidwidth',
+                    help='The data width of the twiddles')
+parser.add_argument('twidfractionals',
+                    help='The number of fractional bits for each twiddle')
+
+parser.add_argument('-f', '--filedir',
+                    action='store',
+                    help='Specifies a directory to store the twiddle file. Else it will store them in the root of the dataset/twiddles as dictated by the inputed .ini')
+parser.add_argument('-v', '--verbose',
+                    action='store_true',
+                    help='Verbose execution of the script')
+
+################################################
+# Main
+################################################
 
 
 if __name__ == "__main__":
 
-    ##################################################################################
+    #****************************************#
     ## Console Arguments
-    ##################################################################################
+    #****************************************#
 
-    if len(sys.argv) < 5 or len(sys.argv) > 6:
-        print("Usage: python main.py <machine> <points> <twidwidth> <twidfractionals> [dir]")
-        sys.exit(1)
+    args = parser.parse_args()
 
-    machine = str(sys.argv[1])
-    points = int(sys.argv[2])
-    width = int(sys.argv[3])
-    fractionals = int(sys.argv[4])
+    machine = args.machinefile
+    points = int(args.points)
+    width = int(args.twidwidth)
+    fractionals = int(args.twidfractionals)
+    userdir = args.filedir
 
-    if len(sys.argv) == 6:
-        dir = str(sys.argv[5]) + "/"
-    else:
-        dir = ""
-
-    ################################################################
+    #****************************************#
     # File system settings
-    ################################################################
+    #****************************************#
 
-    my_directories = my.get_directories(machine)
-    FPGA_twiddle_dir = my_directories[4]
+    config = load_config(machine)
+    FPGA_twiddle_dir = config['path.dataset']['dataset_twiddles']
 
-    ################################################################
-    # Creating the Twiddle ROM files: as many as there are points
-    ################################################################
-
-    twid_dir = FPGA_twiddle_dir + dir
-
+    twid_dir = os.path.join(FPGA_twiddle_dir, userdir)
     if not os.path.exists(twid_dir):
         os.makedirs(twid_dir)
-    
-    FFTint.twiddlefile(points, twid_dir, f"twiddles_{points}p.txt", f"twiddles_complex_{points}p.txt", width, fractionals, False)
+    filename = f"twiddles_{points}p.txt"
+
+    if args.verbose:
+        print("***************************************************")
+        print()
+        print('Generating twiddle file for:')
+        print("FFT points: ", points)
+        print("Twiddle width: ", width)
+        print("Fractional bits: ", fractionals)
+        print("In the file:", os.path.join(twid_dir, filename))
+        print()
+        print("***************************************************")
+
+    #****************************************#
+    # Creating the Twiddle ROM files:
+    # - as many as there are points
+    #****************************************#
+
+    twiddlefile(points, twid_dir, filename, f"twiddles_complex_{points}p.txt", width, fractionals, False)
