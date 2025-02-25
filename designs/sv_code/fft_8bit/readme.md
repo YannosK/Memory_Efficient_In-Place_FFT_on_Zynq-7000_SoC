@@ -26,7 +26,7 @@ Here I keep track of the progress of rewriting the FFT IP core.
   - [ ] address generation unit (AGU)
   - [ ] control unit
   - [ ] register file
-    - [ ] data input dual registers
+    - [x] data input dual registers
     - [ ] shift amount register with compare
     - [ ] shifts count register
 - [ ] interfaces of top level module
@@ -37,7 +37,7 @@ Here I keep track of the progress of rewriting the FFT IP core.
 ***Newly written hdl correspondance with old vhdl design***
 
 - [x] top level module
-    - [ ] r0 & r1 regs
+    - [x] r0 & r1 regs
     - [ ] shamt reg
     - [ ] shamt reg-compare
     - [ ] shift counter
@@ -60,6 +60,12 @@ Here I keep track of the progress of rewriting the FFT IP core.
 ## Things that might be wrong
 - This multiplier instantiation
 - the pairbits in AGU
+- the data multiplexers and demultiplexers
+- the rom array might not be initialized correctly
+  - careful with twiddle length and path
+  - might need a .data file with strict vector form
+  - might need reg instead of logic and no fancy custom types
+  - might need to be a verilog no a SystemVerilog file as described [here](https://docs.amd.com/r/en-US/ug901-vivado-synthesis/Initializing-Block-RAM-From-an-External-Data-File-Verilog) (Vivado bullshit)
 
 ## Internal widths
 

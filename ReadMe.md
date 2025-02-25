@@ -44,7 +44,7 @@ To navigate this repository each folder contains its own `readme` documentation.
   - [ ] address generation unit (AGU)
   - [ ] control unit
   - [ ] register file
-    - [ ] data input dual registers
+    - [x] data input dual registers
     - [ ] shift amount register with compare
     - [ ] shifts count register
 - [ ] interfaces of top level module

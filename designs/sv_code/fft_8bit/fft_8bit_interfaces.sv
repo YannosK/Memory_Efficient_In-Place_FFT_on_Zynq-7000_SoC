@@ -57,3 +57,19 @@ interface axi_ctr_intrf;
     );
 
 endinterface : axi_ctr_intrf
+
+package dataword_pkg;
+
+    typedef logic [7:0] datum_t;
+
+    typedef struct packed {
+        datum_t re;
+        datum_t im;
+    } complex_t;
+
+    typedef struct packed {
+        complex_t left;
+        complex_t right;
+    } word_t;
+
+endpackage : dataword_pkg
